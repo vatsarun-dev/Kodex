@@ -14,23 +14,44 @@
                         <h1>Mock Test</h1>
                         <div class="d1">
                     <li><a  href="index.html">Register</a></li>    
-                    <li><a  href="test.html">Test</a></li> 
+                    <li><a onclick="goTest()" href="test.html">Test</a></li> 
                 </div>  
                     </ul>
                 </nav>
             </header>
+  <div id="timer" style="
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 15px;
+  z-index: 4;
+  position:absolute;
+  left:45%;
+">
+  Time Left: 01:30:00
+</div>
+
          <section class="main">
         <div class="wave"></div>
-        <div class="box"><h2 id="question">Question text</h2></div> 
+        <div class="box"><h4 id="question">Question text</></div> 
         <div class="bx" id="box1"></div> 
         <div class="bx" id="box2"></div> 
         <div class="bx" id="box3"></div> 
         <div class="bx" id="box4"></div> 
         <button id="btn-1">Submit</button>
-        <button id="btn-2">Submit</button>
+        <button id="btn-2">Skip</button>
          </section>
         
     </main>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+  (function () {
+    emailjs.init("V4pjCu-3npPf0FblX");
+  })();
+</script>
+
+<script src="script.js"></script>
+
 </body>
 </html>
